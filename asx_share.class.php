@@ -2,7 +2,7 @@
 /*
     Author:     Anopan Kandiah
     Created:    26/04/2021
-    Modified:   26/04/2021
+    Modified:   12/05/2021
 */
 
 class ASXShare
@@ -31,6 +31,11 @@ class ASXShare
     public function get_share_price()
     {
         return('$' .$this->asx_share["last_price"]);
+    }
+
+    public function get_dividend_yield()
+    {
+        return($this->asx_share["annual_dividend_yield"]);
     }
 }
 ?>
